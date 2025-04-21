@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Ventana.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Mi Netflix Casero 🎥</h1>
+    <div class="grid">
+        <div class="card" onclick="mostrarModal()">
+            <img src="https://neliosoftware.com/es/wp-content/uploads/sites/3/2018/07/aziz-acharki-549137-unsplash.jpg"
+                alt="Stranger Things">
+            <p>Stranger Things</p>
+        </div>
+    </div>
+
+    <!--Ventana flotante-->
+    <div id="ventana" class="ventana">
+        <div class="titulo">
+            <div class="imagen-con-botones">
+                <img src="https://neliosoftware.com/es/wp-content/uploads/sites/3/2018/07/aziz-acharki-549137-unsplash.jpg" 
+                alt="">
+                <div class="botones-sobre-imagen">
+                    <button>Hola mundo</button>
+                    <button><i class="bi bi-plus-circle"></i></button>
+                    <button><i class="bi bi-hand-thumbs-up"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cuerpo-ventana">
+
+            <div class="info-general">
+                <div class="duracion">
+                    <div>
+                       <h5>2022</h5>  
+                    </div>
+                    <div>
+                        <h5>1h 44 min</h5>
+                    </div>
+                    
+                </div>
+                <div class="calificacion">
+                    <h4>13+ </h4>
+                    <h5> violencia, lenguaje inapropiado</h5>        
+                </div>
+                
+            </div>
+
+            <div class="descripcion">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            </div>
+            <br>
+            <h2>Más Títulos similares a este</h2>
+
+            <div class="contenedor-cards">
+                <div class="card">
+                  <img src="https://th.bing.com/th/id/OIP.A_4Qoe9WsKnYnG9m2cFk-QHaLH?rs=1&pid=ImgDetMain" alt="Peli 1">
+                  <p>Película 1: Descripción corta.</p>
+                </div>
+                <div class="card">
+                  <img src="https://th.bing.com/th/id/OIP.A_4Qoe9WsKnYnG9m2cFk-QHaLH?rs=1&pid=ImgDetMain" alt="Peli 2">
+                  <p>Película 2: Descripción corta.</p>
+                </div>
+                <div class="card">
+                  <img src="https://th.bing.com/th/id/OIP.A_4Qoe9WsKnYnG9m2cFk-QHaLH?rs=1&pid=ImgDetMain" alt="Peli 3">
+                  <p>Película 3: Descripción corta.</p>
+                </div>
+                <div class="card">
+                  <img src="https://th.bing.com/th/id/OIP.A_4Qoe9WsKnYnG9m2cFk-QHaLH?rs=1&pid=ImgDetMain" alt="Peli 4">
+                  <p>Película 4: Descripción corta.</p>
+                </div>
+                <div class="card">
+                  <img src="https://th.bing.com/th/id/OIP.A_4Qoe9WsKnYnG9m2cFk-QHaLH?rs=1&pid=ImgDetMain" alt="Peli 5">
+                  <p>Película 5: Descripción corta.</p>
+                </div>
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.A_4Qoe9WsKnYnG9m2cFk-QHaLH?rs=1&pid=ImgDetMain" alt="Peli 5">
+                    <p>Película 5: Descripción corta.</p>
+                  </div>
+                  <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.A_4Qoe9WsKnYnG9m2cFk-QHaLH?rs=1&pid=ImgDetMain" alt="Peli 5">
+                    <p>Película 5: Descripción corta.</p>
+                  </div>
+                  <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.A_4Qoe9WsKnYnG9m2cFk-QHaLH?rs=1&pid=ImgDetMain" alt="Peli 5">
+                    <p>Película 5: Descripción corta.</p>
+                  </div>
+                  <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.A_4Qoe9WsKnYnG9m2cFk-QHaLH?rs=1&pid=ImgDetMain" alt="Peli 5">
+                    <p>Película 5: Descripción corta.</p>
+                  </div> 
+              </div>
+
+              <h1>Acera de esta pelicula</h1>
+              <div class="acerca-pelicula">
+                <div class="acerca-pelicula-1">
+                    <h4>Género</h4>
+                    <p>Acción, Aventura, Ciencia Ficción</p>
+                </div>
+                <div class="acerca-pelicula-2">
+                    <h4>Actores</h4>
+                    <p>Actor 1, Actor 2, Actor 3</p>
+                </div>
+                <div class="acerca-pelicula-3">
+                    <h4>Director</h4>
+                    <p>Director 1, Director 2</p>
+                </div>
+                <div class="acerca-pelicula-4">
+                    <h4>Productores</h4>
+                    <p>Productor 1, Productor 2</p>
+
+              </div>
+        </div>
+    </div>
+
+    <script>
+        function mostrarModal() {
+            document.getElementById("ventana").style.display = "flex";
+        }
+
+        function cerrarModal() {
+            document.getElementById("ventana").style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>

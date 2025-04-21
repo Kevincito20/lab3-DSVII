@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(56, 55, 55);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.ventana {
+    position: fixed; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra respecto a su propio tamaño */
+    width: 850px;
+    max-height: 90%; /* Limita la altura al 90% de la pantalla */
+    background-color: black;
+    z-index: 1000; /* Se asegura de que esté encima de todo */
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    overflow-y: auto; /* Permite scroll vertical si el contenido excede la altura */
+    margin-top: 50px;
+    scrollbar-width:none;
+}
+
+
+.card img{
+    width: 203px;
+    height: 166px;
+}
+
+
+
+.imagen-con-botones {
+    position: relative;
+    display: inline-block;
+}
+
+.imagen-con-botones img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.botones-sobre-imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    background-color: antiquewhite;
+}
+
+.botones-sobre-imagen button {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botones-sobre-imagen button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+.cuerpo-ventana{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.cuerpo-ventana .info-general{
+    margin-bottom: 20px;
+    width: max-content;
+}
+
+
+.descripcion{
+    width: 65%;
+}
+
+.duracion{
+    display: flex;
+    align-items: center;
+}
+
+.calificacion{
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .card {
+    width: 225px;
+    height: 400px;
+  }
+  
+  .card img {
+    width: 100%;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card p {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .acerca-pelicula{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
